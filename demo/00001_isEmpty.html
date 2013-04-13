@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>jQuery Util Demo</title>
+
+<script src="../jquery-1.9.1.min.js"></script>
+<script src="../jquery.util.js"></script>
+
+<script>
+<!--
+
+$(document).ready(
+	function()
+	{
+		$("input#btn").bind("click",
+			function()
+			{
+				if($.isEmpty("input#test1"))
+				{
+					alert("is empty");
+				}
+				else
+				{
+					alert("is not empty");
+				}
+			}
+		);
+	}
+);
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+<input type="text" id="test1" value="" />
+<input type="button" id="btn" value="TEST" />
+
+</body>
+
+</html>
