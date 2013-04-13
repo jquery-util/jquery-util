@@ -1,22 +1,21 @@
 jQuery Util Plugin
 ===========
 
-isEmpty()
+This plugin is common script util. It`s very useful for your web development.
 
 Examples
 
 ```javascript
 
-$.date().adjust("M", +3).format("yyyy-dd-MM"); // same as .setFormat("yyyy-dd-MM").format()
+1. isEmpty
 
-$.date().adjust("M", +3).format();
-
-$.date().adjust("D", -3).format();
-
-$.date("October 1, 1984", "MMMM dd, yyyy").adjust("M", 3).adjust("Y", 5).adjust("D", -1).format();
-
-$.preferCulture("ar");
-
-$.date().adjust("M", +3).format();
+if($.isEmpty("input#test1"))
+{
+	alert("is empty");
+}
+else
+{
+	alert("is not empty");
+}
 
 ```
