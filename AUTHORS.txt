@@ -1,0 +1,5 @@
+Authors ordered by first contribution
+A list of current team members is available at http://jqueryutil.com/about
+
+Chi-dong Kim <jqueryutil@gmail.com>
+Seong-hoon Jeong <signpen7@gmail.com>
