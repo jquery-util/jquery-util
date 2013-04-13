@@ -9,13 +9,12 @@
 (function($, undefined) {
 	$.isEmpty = function(s) {
 		if($(s).val() == "")
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
-		};
-	}
-)(jQuery);
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	};
+})(jQuery);
