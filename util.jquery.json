@@ -8,7 +8,7 @@
 	"maintainers":[{"name":"Chi-dong Kim", "email":"jqueryutil@gmail.com", "url":"http://jqueryutil.com"},
 				{"name":"Seong-hoon Jeong", "email":"signpen7@gmail.com", "url":"http://www.signpen.net"}],
 		"licenses":[{"type":"MIT", "url":"https://github.com/jquery/jquery-util/jquery-util/MIT-LICENSE.txt"}],
-		"bugs":"https://github.com/jquery/jquery-util/jquery-util/issues",
+		"bugs":"https://github.com/jquery/jquery-util/jquery-util/ISSUES.txt",
 		"homepage":"https://github.com/jquery/jquery-util/jquery-util",
 		"docs":"https://github.com/jquery/jquery-util/jquery-util",
 		"download":"http://jqueryutil.com/download",
