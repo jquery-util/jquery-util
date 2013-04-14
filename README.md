@@ -10,20 +10,6 @@ else
 {
 	alert("is not empty");
 }
-
----
-
-2. isEmpty
-
-if($.isEmpty("input#test1"))
-{
-	alert("is empty");
-}
-else
-{
-	alert("is not empty");
-}
-
 ```
 
 ### Authors and Contributors
