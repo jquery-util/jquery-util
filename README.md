@@ -13,7 +13,7 @@ else
 ```
 
 ### Authors and Contributors
-Chi-dong Kim, Seong-hoon Jeong founded GitHub.
+Chi-dong Kim, Seong-hoon Jeong
 
 ### Support or Contact
 Send your request to jqueryutil@gmail.com and we’ll help you sort it out.
