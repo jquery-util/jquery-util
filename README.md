@@ -13,7 +13,7 @@ else
 ```
 
 ### Authors and Contributors
-Chi-dong Kim, Seong-hoon Jeong
+Chi-dong Kim, [Seong-hoon Jeong](http://www.signpen.net)
 
 ### Support or Contact
 Send your request to jqueryutil@gmail.com and we’ll help you sort it out.
