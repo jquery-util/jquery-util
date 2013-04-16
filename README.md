@@ -1,6 +1,6 @@
 ### Utils and Examples
 ```javascript
-1. isEmpty
+# isEmpty
 
 if($.isEmpty("input#test1"))
 {
@@ -10,6 +10,18 @@ else
 {
 	alert("is not empty");
 }
+
+=> <input type="text" id="test1" value="" /> : true
+   <input type="text" id="test2" value="a" /> : false
+
+-------------------------------------------------------
+
+# deleteSpace
+
+$.deleteSpace("input#test1");
+
+=> <input type="text" id="test1" value=" te s  t     " />
+   -> <input type="text" id="test1" value="test" />
 ```
 
 ### Authors and Contributors

@@ -18,14 +18,7 @@ $(document).ready(
 		$("input#btn1").bind("click",
 			function()
 			{
-				if($.isEmpty("input#test1"))
-				{
-					alert("is empty");
-				}
-				else
-				{
-					alert("is not empty");
-				}
+				$.deleteSpace("input#test1");
 			}
 		);
 	}
@@ -38,8 +31,13 @@ $(document).ready(
 
 <body>
 
-<input type="text" id="test1" value="" />
-<input type="button" id="btn1" value="TEST1" />
+<form>
+	<h1>$.deleteSpace</h1>
+	<input type="text" id="test1" value=" te s  t     " />
+	<input type="button" id="btn1" value="TEST1" />
+	<br/>
+	<input type="reset" value="RESET" />
+</form>
 
 </body>
 

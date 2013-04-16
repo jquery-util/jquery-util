@@ -7,14 +7,19 @@
  */
 
 (function($, undefined) {
-	$.isEmpty = function(s) {
-		if($(s).val() == "")
-		{
+	$.isEmpty = function(sel) {
+		if($(sel).val() == "") {
 			return true;
 		}
-		else
-		{
+		else {
 			return false;
 		}
+	};
+
+	$.deleteSpace = function(sel) {
+		var val = $(sel).val();
+		val = $.trim(val);
+		val = val.replace(/ /g, "");
+		$(sel).val(val);
 	};
 })(jQuery);
