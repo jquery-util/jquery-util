@@ -33,7 +33,7 @@
       <section id="main_content" class="inner">
         <h3>Utils and Examples</h3>
 
-<div class="highlight"><pre><span class="mi">1</span><span class="p">.</span> <span class="nx">isEmpty</span>
+<div class="highlight"><pre><span class="err">#</span> <span class="nx">isEmpty</span>
 
 <span class="k">if</span><span class="p">(</span><span class="nx">$</span><span class="p">.</span><span class="nx">isEmpty</span><span class="p">(</span><span class="s2">"input#test1"</span><span class="p">))</span>
 <span class="p">{</span>
@@ -43,6 +43,18 @@
 <span class="p">{</span>
     <span class="nx">alert</span><span class="p">(</span><span class="s2">"is not empty"</span><span class="p">);</span>
 <span class="p">}</span>
+
+<span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"test1"</span> <span class="nx">value</span><span class="o">=</span><span class="s2">""</span> <span class="o">/&gt;</span> <span class="o">:</span> <span class="kc">true</span>
+   <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"test2"</span> <span class="nx">value</span><span class="o">=</span><span class="s2">"a"</span> <span class="o">/&gt;</span> <span class="o">:</span> <span class="kc">false</span>
+
+<span class="o">----------------------------------------------------------------------------</span>
+
+<span class="err">#</span> <span class="nx">deleteSpace</span>
+
+<span class="nx">$</span><span class="p">.</span><span class="nx">deleteSpace</span><span class="p">(</span><span class="s2">"input#test1"</span><span class="p">);</span>
+
+<span class="o">=&gt;</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"test1"</span> <span class="nx">value</span><span class="o">=</span><span class="s2">" te s  t     "</span> <span class="o">/&gt;</span>
+   <span class="o">-&gt;</span> <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">"text"</span> <span class="nx">id</span><span class="o">=</span><span class="s2">"test1"</span> <span class="nx">value</span><span class="o">=</span><span class="s2">"test"</span> <span class="o">/&gt;</span>
 </pre></div>
 
 <h3>Authors and Contributors</h3>
