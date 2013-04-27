@@ -61,6 +61,40 @@ $("input#test2").trimSpace();
 
 <input type="text" id="test2" value=" te s  t     " />
 -> <input type="text" id="test2" value="te s  t" />
+
+----------------------------------------------------------------------------
+
+# lpad
+
+1) $.lpad(str, totalLen, strRepl)
+
+alert($.lpad($("input#test1").val(), 5, "0"));
+
+<input type="text" id="test1" value="123" />
+
+2) $(selector).lpad(totalLen, strRepl)
+
+$("input#test2").lpad(5, "0");
+
+<input type="text" id="test2" value="123" />
+-> <input type="text" id="test2" value="00123" />
+
+----------------------------------------------------------------------------
+
+# rpad
+
+1) $.rpad(str, totalLen, strRepl)
+
+alert($.rpad($("input#test1").val(), 5, "0"));
+
+<input type="text" id="test1" value="123" />
+
+2) $(selector).rpad(totalLen, strRepl)
+
+$("input#test2").rpad(5, "0");
+
+<input type="text" id="test2" value="123" />
+-> <input type="text" id="test2" value="12300" />
 ```
 
 ### Authors and Contributors
