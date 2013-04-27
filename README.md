@@ -42,7 +42,7 @@ $.trimSpace("input#test1");
 $("input#test1").trimSpace();
 
 <input type="text" id="test1" value=" te s  t     " />
--> <input type="text" id="test1" value="test" />
+-> <input type="text" id="test1" value="te s  t" />
 ```
 
 ### Authors and Contributors
