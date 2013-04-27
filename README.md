@@ -37,6 +37,7 @@ else
 alert("'" + $.deleteSpace($("input#test1").val()) + "'");
 
 <input type="text" id="test1" value=" te s  t     " />
+-> 'test'
 
 2) $(selector).deleteSpace()
 
@@ -54,6 +55,7 @@ $("input#test2").deleteSpace();
 alert("'" + $.trimSpace($("input#test1").val()) + "'");
 
 <input type="text" id="test1" value=" te s  t     " />
+-> 'te s  t'
 
 2) $(selector).trimSpace()
 
@@ -71,6 +73,7 @@ $("input#test2").trimSpace();
 alert($.lpad($("input#test1").val(), 5, "0"));
 
 <input type="text" id="test1" value="123" />
+-> '00123'
 
 2) $(selector).lpad(totalLen, strRepl)
 
@@ -88,6 +91,7 @@ $("input#test2").lpad(5, "0");
 alert($.rpad($("input#test1").val(), 5, "0"));
 
 <input type="text" id="test1" value="123" />
+-> '12300'
 
 2) $(selector).rpad(totalLen, strRepl)
 
