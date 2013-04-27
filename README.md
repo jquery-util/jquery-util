@@ -1,6 +1,8 @@
-### Utils and Examples
+### Utils
 
 isEmpty, deleteSpace, trimSpace, lpad, rpad
+
+### Examples
 
 ```javascript
 # isEmpty
