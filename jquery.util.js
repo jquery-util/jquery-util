@@ -7,19 +7,37 @@
  */
 
 (function($, undefined) {
-	$.isEmpty = function(sel) {
-		if($(sel).val() == "") {
-			return true;
+	$.fn.extend({
+		isEmpty:function() {
+			if($(this).val() == "") {
+				return true;
+			}
+			else {
+				return false;
+			}
+		},
+		deleteSpace:function() {
+			var val = $(this).val();
+			val = val.replace(/ /g, "");	//space
+			val = val.replace(/	/g, "");	//tab
+			$(this).val(val);
 		}
-		else {
-			return false;
-		}
-	};
+	});
 
-	$.deleteSpace = function(sel) {
-		var val = $(sel).val();
-		val = $.trim(val);
-		val = val.replace(/ /g, "");
-		$(sel).val(val);
-	};
+	$.extend({
+		isEmpty:function(sel) {
+			if($(sel).val() == "") {
+				return true;
+			}
+			else {
+				return false;
+			}
+		},
+		deleteSpace:function(sel) {
+			var val = $(sel).val();
+			val = val.replace(/ /g, "");	//space
+			val = val.replace(/	/g, "");	//tab
+			$(sel).val(val);
+		}
+	});
 })(jQuery);

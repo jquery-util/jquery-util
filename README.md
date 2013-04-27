@@ -11,8 +11,16 @@ else
 	alert("is not empty");
 }
 
-=> <input type="text" id="test1" value="" /> : true
-   <input type="text" id="test2" value="a" /> : false
+if($("input#test1").isEmpty())
+{
+	alert("is empty");
+}
+else
+{
+	alert("is not empty");
+}
+
+<input type="text" id="test1" value="" />
 
 ----------------------------------------------------------------------------
 
@@ -20,8 +28,10 @@ else
 
 $.deleteSpace("input#test1");
 
-=> <input type="text" id="test1" value=" te s  t     " />
-   -> <input type="text" id="test1" value="test" />
+$("input#test1").deleteSpace();
+
+<input type="text" id="test1" value=" te s  t     " />
+-> <input type="text" id="test1" value="test" />
 ```
 
 ### Authors and Contributors

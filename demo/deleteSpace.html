@@ -21,6 +21,13 @@ $(document).ready(
 				$.deleteSpace("input#test1");
 			}
 		);
+
+		$("input#btn11").bind("click",
+			function()
+			{
+				$("input#test1").deleteSpace();
+			}
+		);
 	}
 );
 
@@ -35,6 +42,7 @@ $(document).ready(
 	<h1>$.deleteSpace</h1>
 	<input type="text" id="test1" value=" te s  t     " />
 	<input type="button" id="btn1" value="TEST1" />
+	<input type="button" id="btn11" value="TEST11" />
 	<br/>
 	<input type="reset" value="RESET" />
 </form>
