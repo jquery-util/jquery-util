@@ -29,35 +29,7 @@ $(document).ready(
 			}
 		);
 
-		$("input#btn11").bind("click",
-			function()
-			{
-				if($("input#test1").isEmpty())
-				{
-					alert("is empty");
-				}
-				else
-				{
-					alert("is not empty");
-				}
-			}
-		);
-
 		$("input#btn2").bind("click",
-			function()
-			{
-				if($.isEmpty("input#test2"))
-				{
-					alert("is empty");
-				}
-				else
-				{
-					alert("is not empty");
-				}
-			}
-		);
-
-		$("input#btn22").bind("click",
 			function()
 			{
 				if($("input#test2").isEmpty())
@@ -84,12 +56,10 @@ $(document).ready(
 	<h1>$.isEmpty("input#test1")</h1>
 	<input type="text" id="test1" value="" />
 	<input type="button" id="btn1" value="TEST1" />
-	<input type="button" id="btn11" value="TEST11" />
 	<br/>
 	<h1>$("input#test2").isEmpty()</h1>
 	<input type="text" id="test2" value="a" />
 	<input type="button" id="btn2" value="TEST2" />
-	<input type="button" id="btn22" value="TEST22" />
 	<br/>
 	<input type="reset" value="RESET" />
 </form>

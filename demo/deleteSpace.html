@@ -18,14 +18,14 @@ $(document).ready(
 		$("input#btn1").bind("click",
 			function()
 			{
-				$.deleteSpace("input#test1");
+				alert("'" + $.deleteSpace("input#test1") + "'");
 			}
 		);
 
-		$("input#btn11").bind("click",
+		$("input#btn2").bind("click",
 			function()
 			{
-				$("input#test1").deleteSpace();
+				$("input#test2").deleteSpace();
 			}
 		);
 	}
@@ -39,10 +39,13 @@ $(document).ready(
 <body>
 
 <form>
-	<h1>$.deleteSpace</h1>
+	<h1>alert("'" + $.deleteSpace("input#test1") + "'")</h1>
 	<input type="text" id="test1" value=" te s  t     " />
 	<input type="button" id="btn1" value="TEST1" />
-	<input type="button" id="btn11" value="TEST11" />
+	<br/>
+	<h1>$("input#test2").deleteSpace()</h1>
+	<input type="text" id="test2" value=" te s  t     " />
+	<input type="button" id="btn2" value="TEST2" />
 	<br/>
 	<input type="reset" value="RESET" />
 </form>

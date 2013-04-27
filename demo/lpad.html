@@ -18,14 +18,14 @@ $(document).ready(
 		$("input#btn1").bind("click",
 			function()
 			{
-				alert("'" + $.trimSpace("input#test1") + "'");
+				alert($.lpad($("input#test1").val(), 5, "0"));
 			}
 		);
 
 		$("input#btn2").bind("click",
 			function()
 			{
-				$("input#test2").trimSpace();
+				$("input#test2").lpad(5, "0");
 			}
 		);
 	}
@@ -39,12 +39,12 @@ $(document).ready(
 <body>
 
 <form>
-	<h1>alert("'" + $.trimSpace("input#test1") + "'")</h1>
-	<input type="text" id="test1" value=" te s  t     " />
+	<h1>alert($.lpad($("input#test1").val(), 5, "0"))</h1>
+	<input type="text" id="test1" value="123" />
 	<input type="button" id="btn1" value="TEST1" />
 	<br/>
-	<h1>$("input#test2").trimSpace()</h1>
-	<input type="text" id="test2" value=" te s  t     " />
+	<h1>$("input#test2").lpad(5, "0")</h1>
+	<input type="text" id="test2" value="123" />
 	<input type="button" id="btn2" value="TEST2" />
 	<br/>
 	<input type="reset" value="RESET" />

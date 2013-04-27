@@ -2,16 +2,9 @@
 ```javascript
 # isEmpty
 
-if($.isEmpty("input#test1"))
-{
-	alert("is empty");
-}
-else
-{
-	alert("is not empty");
-}
+1) $.isEmpty(selector)
 
-if($("input#test1").isEmpty())
+if($.isEmpty("input#test1"))
 {
 	alert("is empty");
 }
@@ -22,27 +15,52 @@ else
 
 <input type="text" id="test1" value="" />
 
+2) $(selector).isEmpty()
+
+if($("input#test2").isEmpty())
+{
+	alert("is empty");
+}
+else
+{
+	alert("is not empty");
+}
+
+<input type="text" id="test2" value="a" />
+
 ----------------------------------------------------------------------------
 
 # deleteSpace
 
-$.deleteSpace("input#test1");
+1) $.deleteSpace(selector)
 
-$("input#test1").deleteSpace();
+alert("'" + $.deleteSpace("input#test1") + "'");
 
 <input type="text" id="test1" value=" te s  t     " />
--> <input type="text" id="test1" value="test" />
+
+2) $(selector).deleteSpace()
+
+$("input#test2").deleteSpace();
+
+<input type="text" id="test2" value=" te s  t     " />
+-> <input type="text" id="test2" value="test" />
 
 ----------------------------------------------------------------------------
 
 # trimSpace
 
-$.trimSpace("input#test1");
+1) $.trimSpace(selector)
 
-$("input#test1").trimSpace();
+alert("'" + $.trimSpace("input#test1") + "'");
 
 <input type="text" id="test1" value=" te s  t     " />
--> <input type="text" id="test1" value="te s  t" />
+
+2) $(selector).trimSpace()
+
+$("input#test2").trimSpace();
+
+<input type="text" id="test2" value=" te s  t     " />
+-> <input type="text" id="test2" value="te s  t" />
 ```
 
 ### Authors and Contributors
