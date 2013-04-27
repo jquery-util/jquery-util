@@ -1,4 +1,7 @@
 ### Utils and Examples
+
+isEmpty, deleteSpace, trimSpace, lpad, rpad
+
 ```javascript
 # isEmpty
 
