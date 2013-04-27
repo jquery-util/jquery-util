@@ -18,7 +18,7 @@ $(document).ready(
 		$("input#btn1").bind("click",
 			function()
 			{
-				alert("'" + $.deleteSpace("input#test1") + "'");
+				alert("'" + $.deleteSpace($("input#test1").val()) + "'");
 			}
 		);
 
@@ -39,7 +39,7 @@ $(document).ready(
 <body>
 
 <form>
-	<h1>alert("'" + $.deleteSpace("input#test1") + "'")</h1>
+	<h1>alert("'" + $.deleteSpace($("input#test1").val()) + "'")</h1>
 	<input type="text" id="test1" value=" te s  t     " />
 	<input type="button" id="btn1" value="TEST1" />
 	<br/>

@@ -62,16 +62,14 @@
 				return false;
 			}
 		},
-		deleteSpace:function(sel) {
-			var val = $(sel).val();
-			val = val.replace(/ /g, "");	//space
+		deleteSpace:function(str) {
+			var val = str.replace(/ /g, "");	//space
 			val = val.replace(/	/g, "");	//tab
 
 			return val;
 		},
-		trimSpace:function(sel) {
-			var val = $(sel).val();
-			val = $.trim(val);
+		trimSpace:function(str) {
+			var val = $.trim(str);
 
 			return val;
 		},

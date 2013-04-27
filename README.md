@@ -32,9 +32,9 @@ else
 
 # deleteSpace
 
-1) $.deleteSpace(selector)
+1) $.deleteSpace(str)
 
-alert("'" + $.deleteSpace("input#test1") + "'");
+alert("'" + $.deleteSpace($("input#test1").val()) + "'");
 
 <input type="text" id="test1" value=" te s  t     " />
 
@@ -49,9 +49,9 @@ $("input#test2").deleteSpace();
 
 # trimSpace
 
-1) $.trimSpace(selector)
+1) $.trimSpace(str)
 
-alert("'" + $.trimSpace("input#test1") + "'");
+alert("'" + $.trimSpace($("input#test1").val()) + "'");
 
 <input type="text" id="test1" value=" te s  t     " />
 
