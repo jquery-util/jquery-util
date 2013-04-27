@@ -21,6 +21,11 @@
 			val = val.replace(/ /g, "");	//space
 			val = val.replace(/	/g, "");	//tab
 			$(this).val(val);
+		},
+		trimSpace:function() {
+			var val = $(this).val();
+			val = $.trim(val);
+			$(this).val(val);
 		}
 	});
 
@@ -37,6 +42,11 @@
 			var val = $(sel).val();
 			val = val.replace(/ /g, "");	//space
 			val = val.replace(/	/g, "");	//tab
+			$(sel).val(val);
+		},
+		trimSpace:function(sel) {
+			var val = $(sel).val();
+			val = $.trim(val);
 			$(sel).val(val);
 		}
 	});

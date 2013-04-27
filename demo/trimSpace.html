@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>jQuery Util Demo</title>
+
+<script src="../jquery-1.9.1.min.js"></script>
+<script src="../jquery.util.js"></script>
+
+<script>
+<!--
+
+$(document).ready(
+	function()
+	{
+		$("input#btn1").bind("click",
+			function()
+			{
+				$.trimSpace("input#test1");
+			}
+		);
+
+		$("input#btn11").bind("click",
+			function()
+			{
+				$("input#test1").trimSpace();
+			}
+		);
+	}
+);
+
+//-->
+</script>
+
+</head>
+
+<body>
+
+<form>
+	<h1>$.deleteSpace</h1>
+	<input type="text" id="test1" value=" te s  t     " />
+	<input type="button" id="btn1" value="TEST1" />
+	<input type="button" id="btn11" value="TEST11" />
+	<br/>
+	<input type="reset" value="RESET" />
+</form>
+
+</body>
+
+</html>
