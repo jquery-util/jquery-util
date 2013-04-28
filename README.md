@@ -1,6 +1,6 @@
 ### Utils
 
-isEmpty, deleteSpace, trimSpace, lpad, rpad, byteSize
+isEmpty, isLengthBetween, isByteBetween, deleteSpace, trimSpace, lpad, rpad, byteSize
 
 ### Examples
 
