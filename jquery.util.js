@@ -16,6 +16,26 @@
 				return false;
 			}
 		},
+		isLengthBetween:function(min, max) {
+			var length = $(this).val().length;
+
+			if(min <= length && length <= max) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		},
+		isByteBetween:function(min, max) {
+			var byteSize = $(this).byteSize();
+
+			if(min <= byteSize && byteSize <= max) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		},
 		deleteSpace:function() {
 			var val = $(this).val();
 			val = val.replace(/ /g, "");	//space
@@ -50,12 +70,50 @@
 			var val = $(this).val() + strAdd;
 
 			$(this).val(val);
+		},
+		byteSize:function() {
+			var val = $(this).val();
+			var byteSize = 0;
+
+			for(var i = 0; i < val.length; i++)
+			{
+				if(val.charCodeAt(i) > 255)
+				{
+					byteSize += 2;
+				}
+				else
+				{
+					byteSize += 1;
+				}
+			}
+
+			return byteSize;
 		}
 	});
 
 	$.extend({
-		isEmpty:function(sel) {
-			if($(sel).val() == "") {
+		isEmpty:function(str) {
+			if(str == "") {
+				return true;
+			}
+			else {
+				return false;
+			}
+		},
+		isLengthBetween:function(str, min, max) {
+			var length = str.length;
+
+			if(min <= length && length <= max) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		},
+		isByteBetween:function(str, min, max) {
+			var byteSize = $.byteSize(str);
+
+			if(min <= byteSize && byteSize <= max) {
 				return true;
 			}
 			else {
@@ -92,6 +150,24 @@
 			}
 
 			return str + strAdd;
+		},
+		byteSize:function(str) {
+			var val = str;
+			var byteSize = 0;
+
+			for(var i = 0; i < val.length; i++)
+			{
+				if(val.charCodeAt(i) > 255)
+				{
+					byteSize += 2;
+				}
+				else
+				{
+					byteSize += 1;
+				}
+			}
+
+			return byteSize;
 		}
 	});
 })(jQuery);

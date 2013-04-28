@@ -18,7 +18,7 @@ $(document).ready(
 		$("input#btn1").bind("click",
 			function()
 			{
-				var is = $.isEmpty($("input#test1").val());
+				var is = $.isLengthBetween($("input#test1").val(), 3, 5);
 
 				alert(is);
 			}
@@ -27,7 +27,7 @@ $(document).ready(
 		$("input#btn2").bind("click",
 			function()
 			{
-				var is = $("input#test2").isEmpty();
+				var is = $("input#test2").isLengthBetween(3, 5);
 
 				alert(is);
 			}
@@ -43,12 +43,12 @@ $(document).ready(
 <body>
 
 <form>
-	<h1>$.isEmpty($("input#test1").val())</h1>
-	<input type="text" id="test1" value="" />
+	<h1>$.isLengthBetween($("input#test1").val(), 3, 5)</h1>
+	<input type="text" id="test1" value="1234" />
 	<input type="button" id="btn1" value="TEST1" />
 	<br/>
-	<h1>$("input#test2").isEmpty()</h1>
-	<input type="text" id="test2" value="a" />
+	<h1>$("input#test2").isLengthBetween(3, 5)</h1>
+	<input type="text" id="test2" value="12" />
 	<input type="button" id="btn2" value="TEST2" />
 	<br/>
 	<input type="reset" value="RESET" />

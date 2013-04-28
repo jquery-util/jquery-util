@@ -1,37 +1,73 @@
 ### Utils
 
-isEmpty, deleteSpace, trimSpace, lpad, rpad
+isEmpty, deleteSpace, trimSpace, lpad, rpad, byteSize
 
 ### Examples
 
 ```javascript
 # isEmpty
 
-1) $.isEmpty(selector)
+1) $.isEmpty(str)
 
-if($.isEmpty("input#test1"))
-{
-	alert("is empty");
-}
-else
-{
-	alert("is not empty");
-}
+var is = $.isEmpty($("input#test1").val());
+
+alert(is);
 
 <input type="text" id="test1" value="" />
+-> true
 
 2) $(selector).isEmpty()
 
-if($("input#test2").isEmpty())
-{
-	alert("is empty");
-}
-else
-{
-	alert("is not empty");
-}
+var is = $("input#test2").isEmpty();
+
+alert(is);
 
 <input type="text" id="test2" value="a" />
+-> false
+
+----------------------------------------------------------------------------
+
+# isLengthBetween
+
+1) $.isLengthBetween(str)
+
+var is = $.isLengthBetween($("input#test1").val(), 3, 5);
+
+alert(is);
+
+<input type="text" id="test1" value="1234" />
+-> true
+
+2) $(selector).isLengthBetween()
+
+var is = $("input#test2").isLengthBetween(3, 5);
+
+alert(is);
+
+<input type="text" id="test2" value="12" />
+-> false
+
+----------------------------------------------------------------------------
+
+# isByteBetween
+
+1) $.isByteBetween(str)
+
+var is = $.isByteBetween($("input#test1").val(), 3, 5);
+
+alert(is);
+
+<input type="text" id="test1" value="a가나다" />
+-> false
+
+2) $(selector).isByteBetween()
+
+var is = $("input#test2").isByteBetween(3, 5);
+
+alert(is);
+
+<input type="text" id="test2" value="a가" />
+-> true
 
 ----------------------------------------------------------------------------
 
@@ -104,6 +140,28 @@ $("input#test2").rpad(5, "0");
 
 <input type="text" id="test2" value="123" />
 -> <input type="text" id="test2" value="12300" />
+
+----------------------------------------------------------------------------
+
+# byteSize
+
+1) $.byteSize(str)
+
+var size = $.byteSize($("input#test1").val());
+
+alert(size);
+
+<input type="text" id="test1" value="a가" />
+-> 3
+
+2) $(selector).byteSize()
+
+var size = $("input#test2").byteSize();
+
+alert(size);
+
+<input type="text" id="test2" value="a가" />
+-> 3
 ```
 
 ### Authors and Contributors
